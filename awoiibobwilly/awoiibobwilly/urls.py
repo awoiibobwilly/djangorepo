@@ -18,8 +18,18 @@ from django.contrib import admin
 from django.urls import path
 from home.views import index
 from aboutus.views import aboutus
+from contactus.views import contactus
+from blogs.views import blogs
+from login.views import login
+from register.views import register
+from resources.views import resources
 
 urlpatterns = [
     path("", index, name="index"),
     path("aboutus/", aboutus, name="aboutus"),
+    path("contactus/", contactus, name="contactus"),
+    path("blogs/", blogs, name="blogs"),
+    path("login/", login, name="login"),
+    path("register/", register, name="register"),
+    path("resources/", resources, name="resources"),
 ]
